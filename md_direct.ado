@@ -15,8 +15,8 @@ local mean_diff_upper_ic = `mean_diff' + ( 1.95996 * `mean_diff_sd' * sqrt( (1/`
 local mean_diff_lower_ic = `mean_diff' - ( 1.95996 * `mean_diff_sd' * sqrt( (1/`n_int') + (1/`n_cont') ) )
 
 
-local mean_diff_upper_ic = round(mean_diff_upper_ic, 0.01)
-local mean_diff_lower_ic = round(mean_diff_lower_ic, 0.01)
+local mean_diff_upper_ic = round(`mean_diff_upper_ic', 0.01)
+local mean_diff_lower_ic = round(`mean_diff_lower_ic', 0.01)
 
 
 display = "The mean difference is = `mean_diff'"
