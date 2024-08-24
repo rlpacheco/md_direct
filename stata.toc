@@ -1,0 +1,8 @@
+v 1
+d md_direct. Confidence intervals for mean differences (direct calculation).
+d md_direct by Rafael Leite Pacheco and Rachel Riera
+d Hospital Sírio-Libanês, Universidade Federal de São Paulo.
+d The command md_direct was created for the immediate calculating of confidence intervals for mean differences of relative treatment estimates.
+d Full guidance and support: https://rlpacheco.github.io/md_direct/
+
+p md_direct  Confidence intervals for mean differences (direct calculation)
