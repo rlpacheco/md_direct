@@ -1,5 +1,3 @@
-capture program drop direct_md
-
 program define direct_md 
 
 args m_int sd_int n_int m_cont sd_cont n_cont
