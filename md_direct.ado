@@ -1,3 +1,5 @@
+capture program drop direct_md
+
 program define direct_md 
 
 args m_int sd_int n_int m_cont sd_cont n_cont
@@ -15,10 +17,11 @@ local mean_diff_lower_ic = `mean_diff' - ( 1.95996 * `mean_diff_sd' * sqrt( (1/`
 
 local mean_diff_upper_ic = round(`mean_diff_upper_ic', 0.001)
 local mean_diff_lower_ic = round(`mean_diff_lower_ic', 0.001)
-
+local mean_diff = round(mean_diff, 0.001)
 
 display = "The mean difference is = `mean_diff'"
 display = "The 95% CI is = `mean_diff_lower_ic' to `mean_diff_upper_ic'"
+
 
 
 end
